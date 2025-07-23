@@ -9,21 +9,22 @@
 - Why we're getting the dark theme by default
 - Heading
 - Checkout satisfy typescript type
+- Button
+- set dark light mode in storybook
 
 ## Work in progress
 
-- Button
-
 ## TODO Item:
 
-- set dark light mode in storybook
 - Add a11y storybook check
 - Focus visible for keyword
+- dark color for shadow
 - Create Design system component
   - Button with Icon
   - Icon
   - ButtonBar
   - Highlighter
+- Dark and Light mode
 - UI
   - Header
   - Footer

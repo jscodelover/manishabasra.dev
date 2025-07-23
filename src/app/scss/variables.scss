@@ -3,37 +3,39 @@
 
 :root {
   /* Base Token*/
-  --base-color-pink-100: rgba(233, 150, 191, 1);
-  --base-color-pink-200: rgba(246, 141, 190, 1);
-  --base-color-pink-300: rgba(229, 95, 160, 1);
-  --base-color-pink-400: rgba(207, 41, 123, 1);
 
-  --try-base-color-pink-50: rgba(246, 141, 190, 1);
-  --try-base-color-pink-100: rgba(233, 150, 191, 1);
-  --try-base-color-pink-200: rgba(221, 127, 171, 1);
-  --try-base-color-pink-300: rgba(210, 135, 172, 1);
-  --try-base-color-pink-400: rgba(197, 113, 152, 1);
-  --try-base-color-pink-500: rgba(187, 120, 153, 1);
-  --try-base-color-pink-600: rgba(183, 76, 128, 1);
-  --try-base-color-pink-650: rgba(173, 36, 99, 1); /* NEW */
-  --try-base-color-pink-700: rgba(165, 33, 99, 1);
-  --try-base-color-pink-750: rgba(155, 36, 89, 1);
-  --try-base-color-pink-800: rgba(138, 32, 79, 1);
-  --try-base-color-pink-850: rgba(112, 19, 64, 1);
-  --try-base-color-pink-900: rgba(100, 17, 57, 1);
-  --try-base-color-pink-950: rgba(90, 15, 51, 1);
+  --base-color-pink-opacity-100: rgba(246, 141, 190, 0.08);
+  --base-color-pink-opacity-200: rgba(246, 141, 190, 0.1);
+  --base-color-pink-opacity-300: rgba(173, 36, 99, 0.09);
+  --base-color-pink-opacity-400: rgba(173, 36, 99, 0.15);
+
+  --base-color-pink-100: rgba(112, 19, 64, 1);
+  --base-color-pink-200: rgba(138, 30, 78, 1);
+  --base-color-pink-300: rgba(156, 33, 89, 1);
+  --base-color-pink-400: rgba(173, 36, 99, 1);
+  --base-color-pink-500: rgba(206, 108, 152, 1);
+  --base-color-pink-600: rgba(207, 41, 123, 1);
+  --base-color-pink-700: rgba(228, 120, 168, 1);
+  --base-color-pink-800: rgba(229, 95, 160, 1);
+  --base-color-pink-900: rgba(233, 150, 191, 1);
+  --base-color-pink-1000: rgba(246, 141, 190, 1);
 
   --base-color-orange-100: rgba(242, 178, 140, 1);
   --base-color-orange-200: rgba(225, 138, 102, 1);
 
   --base-color-white-100: rgba(255, 255, 255, 1);
 
-  --base-color-grey-100: rgba(224, 224, 224, 1);
-  --base-color-grey-200: rgba(173, 173, 173, 1);
-  --base-color-grey-300: rgba(104, 104, 104, 1);
+  --base-color-grey-100: rgba(243, 243, 243, 1);
+  --base-color-grey-200: rgba(246, 246, 246, 1);
+  --base-color-grey-300: rgba(224, 224, 224, 1);
+  --base-color-grey-400: rgba(173, 173, 173, 1);
+  --base-color-grey-500: rgba(104, 104, 104, 1);
 
-  --base-color-black-100: rgba(35, 35, 35, 1);
-  --base-color-black-200: rgba(26, 26, 26, 1);
+  --base-color-black-100: rgba(26, 26, 26, 1);
+  --base-color-black-200: rgba(58, 58, 58, 1);
+  --base-color-black-300: rgba(65, 65, 65, 1);
+  --base-color-black-400: rgba(35, 35, 35, 1);
+  --base-color-black-opacity-10: rgba(0, 0, 0, 0.15);
 
   /*
     Spacing tokens:
@@ -91,29 +93,34 @@
   --base-font-letter-spacing-400: 0.02em;
   --base-font-letter-spacing-1000: #{unit-convertor.px-to-rem(1)};
 
-  /* Semantic Token */
-  --sem-color-primary: var(--base-color-pink-850);
-  --sem-color-secondary: var(--base-color-pink-650);
-  --sem-color-tertiary: var(--base-color-pink-400);
-  --sem-color-accent: var(--base-color-pink-200);
+  --sem-space-between-sections: calc(1rem / var(--base-space-500));
+  --sem-space-between-heading-section: calc(1rem / var(--base-space-300));
+  --sem-space-between-icon-text: calc(1rem / var(--base-space-200));
+}
 
-  --sem-color-text-standard: var(--base-color-black-200);
-  --sem-color-text-subtle: var(--base-color-grey-300);
+:root,
+.light-mode {
+  --sem-color-primary: var(--base-color-pink-100);
+  --sem-color-secondary: var(--base-color-pink-400);
+  --sem-color-tertiary: var(--base-color-pink-600);
+  --sem-color-accent: var(--base-color-pink-1000);
+
+  --sem-color-text-standard: var(--base-color-black-100);
+  --sem-color-text-subtle: var(--base-color-grey-500);
 
   --sem-color-bg: var(--base-color-white-100);
 
-  --sem-color-border: var(--base-color-black-200);
+  --sem-color-border: var(--base-color-black-opacity-10);
 
   --sem-color-button-primary-text: var(--base-color-white-100);
-  --sem-color-button-primary-bg: var(--base-color-pink-650);
-  --sem-color-button-secondary: var(--base-color-pink-650);
-  --sem-color-button-primary-hover: var(--base-color-pink-opacity-50);
-  --sem-color-button-secondary-hover: var(--base-color-pink-opacity-50);
-  --sem-color-button-tertiary-hover: var(--base-color-pink-650);
-
-  --sem-space-between-sections: calc(1rem / var(--space-500));
-  --sem-space-between-heading-section: calc(1rem / var(--space-300));
-  --sem-space-between-icon-text: calc(1rem / var(--space-200));
+  --sem-color-button-primary-bg: var(--base-color-pink-400);
+  --sem-color-button-secondary: var(--base-color-pink-400);
+  --sem-color-button-primary-hover: var(--base-color-pink-300);
+  --sem-color-button-secondary-hover: var(--base-color-pink-opacity-300);
+  --sem-color-button-tertiary-hover: var(--base-color-grey-100);
+  --sem-color-button-primary-active: var(--base-color-pink-200);
+  --sem-color-button-secondary-active: var(--base-color-pink-opacity-400);
+  --sem-color-button-tertiary-active: var(--base-color-grey-200);
 
   --sem-elevation-x-small: 0 1px 2px 0 rgb(16 24 40/ 0.04), 0 1px 2px rgb(16 24 40/ 0.04);
   --sem-elevation-small: 0 2px 6px 0 rgb(16 24 40/ 0.06);
@@ -123,23 +130,26 @@
   --sem-elevation-xx-large: 0 25px 60px -15px rgb(16 24 40/ 0.12), 0 25px 60px -15px rgb(16 24 40/ 0.12);
 }
 
-.dark-theme {
-  --sem-color-primary: var(--base-color-pink-300);
-  --sem-color-secondary: var(--base-color-pink-200);
-  --sem-color-tertiary: var(--base-color-pink-100);
-  --sem-color-accent: var(--base-color-pink-100);
+.dark-mode {
+  --sem-color-primary: var(--base-color-pink-800);
+  --sem-color-secondary: var(--base-color-pink-1000);
+  --sem-color-tertiary: var(--base-color-pink-900);
+  --sem-color-accent: var(--base-color-pink-900);
 
-  --sem-color-text-standard: var(--base-color-grey-100);
-  --sem-color-text-subtle: var(--base-color-grey-200);
+  --sem-color-text-standard: var(--base-color-grey-300);
+  --sem-color-text-subtle: var(--base-color-grey-400);
 
-  --sem-color-bg: var(--base-color-black-100);
+  --sem-color-bg: var(--base-color-black-400);
 
-  --sem-color-border: var(--base-color-grey-100);
+  --sem-color-border: var(--base-color-grey-300);
 
-  --sem-color-button-primary-text: var(--base-color-black-100);
-  --sem-color-button-primary-bg: var(--base-color-pink-200);
-  --sem-color-button-secondary: var(--base-color-pink-200);
-  --sem-color-button-primary-hover: var(--base-color-pink-opacity-20);
-  --sem-color-button-secondary-hover: var(--base-color-pink-opacity-20);
-  --sem-color-button-tertiary-hover: var(--base-color-pink-650);
+  --sem-color-button-primary-text: var(--base-color-black-400);
+  --sem-color-button-primary-bg: var(--base-color-pink-1000);
+  --sem-color-button-secondary: var(--base-color-pink-1000);
+  --sem-color-button-primary-hover: var(--base-color-pink-700);
+  --sem-color-button-secondary-hover: var(--base-color-pink-opacity-100);
+  --sem-color-button-tertiary-hover: var(--base-color-black-200);
+  --sem-color-button-primary-active: var(--base-color-pink-500);
+  --sem-color-button-secondary-active: var(--base-color-pink-opacity-200);
+  --sem-color-button-tertiary-active: var(--base-color-black-300);
 }
