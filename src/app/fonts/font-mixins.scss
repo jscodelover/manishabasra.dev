@@ -1,9 +1,9 @@
-@mixin font-skin-body-standard {
+@mixin font-skin-body-subtle-small {
   font-family: var(--base-font-family-primary);
-  font-weight: var(--base-font-weight-medium);
-  font-size: var(--base-font-size-300);
+  font-weight: var(--base-font-weight-regular);
+  font-size: var(--base-font-size-200);
   line-height: var(--base-font-line-height-500);
-  letter-spacing: var(--base-font-letter-spacing-100);
+  letter-spacing: var(--base-font-letter-spacing-1000);
 }
 
 @mixin font-skin-body-small {
@@ -14,12 +14,20 @@
   letter-spacing: var(--base-font-letter-spacing-100);
 }
 
-@mixin font-skin-body-subtle-small {
+@mixin font-skin-body-standard {
   font-family: var(--base-font-family-primary);
-  font-weight: var(--base-font-weight-regular);
-  font-size: var(--base-font-size-200);
+  font-weight: var(--base-font-weight-medium);
+  font-size: var(--base-font-size-300);
   line-height: var(--base-font-line-height-500);
-  letter-spacing: var(--base-font-letter-spacing-1000);
+  letter-spacing: var(--base-font-letter-spacing-100);
+}
+
+@mixin font-skin-body-large {
+  font-family: var(--base-font-family-primary);
+  font-weight: var(--base-font-weight-bold);
+  font-size: var(--base-font-size-400);
+  line-height: var(--base-font-line-height-500);
+  letter-spacing: var(--base-font-letter-spacing-100);
 }
 
 @mixin font-skin-title-display {
@@ -33,7 +41,7 @@
 @mixin font-skin-editorial-headline {
   font-family: var(--base-font-family-primary);
   font-weight: var(--base-font-weight-bold);
-  font-size: var(--base-font-size-1200);
-  line-height: var(--base-font-line-height-200);
-  letter-spacing: var(--base-font-letter-spacing-400);
+  font-size: var(--base-font-size-600);
+  line-height: var(--base-font-line-height-400);
+  letter-spacing: var(--base-font-letter-spacing-100);
 }

@@ -1,11 +1,23 @@
-import { JSX } from 'react';
 import typographyStyles from './style.module.scss';
-interface TypographyProps {
+
+// Infer props of any given tag or component
+type AsProp<T extends React.ElementType> = {
+  as?: T;
+};
+
+// Merge own props with intrinsic element/component props
+type PropsToOmit<T extends React.ElementType, P> = keyof (AsProp<T> & P);
+
+type PolymorphicComponentProps<T extends React.ElementType, Props = object> = React.PropsWithChildren<
+  Props & AsProp<T>
+> &
+  Omit<React.ComponentPropsWithoutRef<T>, PropsToOmit<T, Props>>;
+
+type TypographyProps<T extends React.ElementType = 'span'> = PolymorphicComponentProps<T> & {
   fontSkin?: 'body-standard' | 'body-small' | 'body-subtle-small' | 'title-display';
-  as?: keyof JSX.IntrinsicElements;
-  children: React.ReactNode;
-}
-export const Typography = (props: TypographyProps) => {
+};
+
+export const Typography = <T extends React.ElementType = 'span'>(props: TypographyProps<T>) => {
   const { fontSkin = 'body-standard', as: Component = 'span', children, ...rest } = props;
   return (
     <Component className={typographyStyles[`font-skin-${fontSkin}`]} {...rest}>
