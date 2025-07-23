@@ -125,12 +125,12 @@
   --sem-color-button-secondary-active: var(--base-color-pink-opacity-400);
   --sem-color-button-tertiary-active: var(--base-color-grey-200);
 
-  --sem-elevation-x-small: 0 1px 2px 0 rgb(16 24 40/ 0.04), 0 1px 2px rgb(16 24 40/ 0.04);
-  --sem-elevation-small: 0 2px 6px 0 rgb(16 24 40/ 0.06);
-  --sem-elevation-medium: 0 6px 15px -2px rgb(16 24 40/ 0.08), 0 6px 15px -2px rgb(16 24 40/ 0.08);
-  --sem-elevation-large: 0 8px 25px -3px rgb(16 24 40/ 0.05), 0 8px 25px -3px rgb(16 24 40/ 0.05);
-  --sem-elevation-x-large: 0 20px 40px -8px rgb(16 24 40/ 0.05), 0 20px 40px -8px rgb(16 24 40/ 0.05);
-  --sem-elevation-xx-large: 0 25px 60px -15px rgb(16 24 40/ 0.12), 0 25px 60px -15px rgb(16 24 40/ 0.12);
+  --sem-elevation-x-small: 0 1px 2px 0 rgb(16 24 40 / 0.04), 0 1px 2px rgb(16 24 40 / 0.04);
+  --sem-elevation-small: 0 2px 6px 0 rgb(16 24 40 / 0.06);
+  --sem-elevation-medium: 0 8px 25px -3px rgb(16 24 40 / 0.05), 0 8px 25px -3px rgb(16 24 40 / 0.05);
+  --sem-elevation-large: 0 24px 48px -12px rgb(16 24 40 / 0.12), 0 12px 20px -8px rgb(16 24 40 / 0.08);
+  --sem-elevation-x-large: 0 20px 40px -8px rgb(16 24 40 / 0.05), 0 20px 40px -8px rgb(16 24 40 / 0.05);
+  --sem-elevation-xx-large: 0 6px 15px -2px rgb(16 24 40 / 0.08), 0 6px 15px -2px rgb(16 24 40 / 0.08);
 
   --sem-color-outline-standard: var(--base-color-blue-100);
 }
@@ -159,4 +159,11 @@
   --sem-color-button-tertiary-active: var(--base-color-black-300);
 
   --sem-color-outline-standard: var(--base-color-blue-200);
+
+  --sem-elevation-x-small: 0 1px 2px 0 rgb(0 0 0 / 0.3), 0 1px 2px rgb(0 0 0 / 0.2);
+  --sem-elevation-small: 0 2px 4px 0 rgb(0 0 0 / 0.35);
+  --sem-elevation-medium: 0 8px 24px -6px rgba(0, 0, 0, 0.35);
+  --sem-elevation-large: 0 24px 48px -12px rgb(0 0 0 / 0.45);
+  --sem-elevation-x-large: 0 12px 30px -4px rgb(0 0 0 / 0.55);
+  --sem-elevation-xx-large: 0 4px 10px 0 rgb(0 0 0 / 0.55);
 }
