@@ -1,0 +1,116 @@
+:root {
+  /* Base Token*/
+  --base-color-pink-100: #e996bf;
+  --base-color-pink-200: #f68dbe;
+  --base-color-pink-300: #e55fa0;
+  --base-color-pink-400: #cf297b;
+  --base-color-pink-500: #ad2463;
+  --base-color-pink-600: #701340;
+
+  --base-color-orange-100: #f2b28c;
+  --base-color-orange-200: #e18a66;
+
+  --base-color-white-100: #ffffff;
+
+  --base-color-grey-100: #e0e0e0;
+  --base-color-grey-200: #adadad;
+  --base-color-grey-300: #686868;
+
+  --base-color-black-100: #232323;
+  --base-color-black-200: #1a1a1a;
+
+  /*
+    Spacing tokens:
+    Use the pixel value directly, or use rem-based values for responsive design.
+    Example: calc(var(--space-200) / 16 * 1rem) for rem conversion.
+    Adjust spacing scale as needed for consistency and accessible UI.
+  */
+  --base-space-100: 4px;
+  --base-space-200: 8px;
+  --base-space-300: 12px;
+  --base-space-400: 16px;
+  --base-space-500: 20px;
+  --base-space-600: 24px;
+  --base-space-700: 28px;
+  --base-space-800: 32px;
+  --base-space-900: 40px;
+  --base-space-1000: 48px;
+  --base-space-1100: 64px;
+  --base-space-1200: 80px;
+  --base-space-1300: 96px;
+  --base-space-1400: 128px;
+  --base-space-1500: 160px;
+  --base-space-1600: 192px;
+
+  --base-font-family-primary: 'Inter', 'WorkSans', sans-serif;
+
+  --base-font-size-100: calc(1rem / 12);
+  --base-font-size-200: calc(1rem / 14);
+  --base-font-size-300: calc(1rem / 16);
+  --base-font-size-400: calc(1rem / 18);
+  --base-font-size-500: calc(1rem / 20);
+  --base-font-size-600: calc(1rem / 24);
+  --base-font-size-700: calc(1rem / 28);
+  --base-font-size-800: calc(1rem / 32);
+  --base-font-size-900: calc(1rem / 36);
+  --base-font-size-1000: calc(1rem / 40);
+  --base-font-size-1100: calc(1rem / 44);
+  --base-font-size-1200: calc(1rem / 52);
+
+  --base-font-line-height-100: 1.1;
+  --base-font-line-height-200: 1.2;
+  --base-font-line-height-300: 1.3;
+  --base-font-line-height-400: 1.4;
+  --base-font-line-height-500: 1.5;
+  --base-font-line-height-075: 0.9;
+
+  --base-font-weight-regular: 400;
+  --base-font-weight-medium: 500;
+  --base-font-weight-semi-bold: 600;
+  --base-font-weight-bold: 700;
+  --base-font-weight-extra-bold: 800;
+
+  --base-font-letter-spacing-100: 0em;
+  --base-font-letter-spacing-200: 0.005em;
+  --base-font-letter-spacing-300: 0.01em;
+  --base-font-letter-spacing-400: 0.02em;
+  --base-font-letter-spacing-025: -0.03em;
+  --base-font-letter-spacing-050: -0.02em;
+  --base-font-letter-spacing-075: -0.01em;
+
+  /* Semantic Token */
+  --sem-color-primary: var(--base-color-pink-600);
+  --sem-color-secondary: var(--base-color-pink-500);
+  --sem-color-tertiary: var(--base-color-pink-400);
+  --sem-color-accent: var(--base-color-pink-200);
+
+  --sem-color-text-standard: var(--base-color-black-200);
+  --sem-color-text-subtle: var(--base-color-grey-300);
+
+  --sem-color-bg: var(--base-color-white-100);
+
+  --sem-space-between-sections: calc(1rem / var(--space-500));
+  --sem-space-between-heading-section: calc(1rem / var(--space-300));
+  --sem-space-between-icon-text: calc(1rem / var(--space-200));
+
+  --sem-elevation-x-small: 0 1px 2px 0 rgb(16 24 40/ 0.04), 0 1px 2px rgb(16 24 40/ 0.04);
+  --sem-elevation-small: 0 2px 6px 0 rgb(16 24 40/ 0.06);
+  --sem-elevation-medium: 0 6px 15px -2px rgb(16 24 40/ 0.08), 0 6px 15px -2px rgb(16 24 40/ 0.08);
+  --sem-elevation-large: 0 8px 25px -3px rgb(16 24 40/ 0.05), 0 8px 25px -3px rgb(16 24 40/ 0.05);
+  --sem-elevation-x-large: 0 20px 40px -8px rgb(16 24 40/ 0.05), 0 20px 40px -8px rgb(16 24 40/ 0.05);
+  --sem-elevation-xx-large: 0 25px 60px -15px rgb(16 24 40/ 0.12), 0 25px 60px -15px rgb(16 24 40/ 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sem-color-primary: var(--base-color-pink-300);
+    --sem-color-secondary: var(--base-color-pink-200);
+    --sem-color-tertiary: var(--base-color-pink-100);
+    --sem-color-accent: var(--base-color-pink-100);
+
+    --sem-color-text-standard: var(--base-color-grey-100);
+    --sem-color-text-subtle: var(--base-color-grey-200);
+
+    --sem-color-bg: var(--base-color-black-100);
+  }
+}

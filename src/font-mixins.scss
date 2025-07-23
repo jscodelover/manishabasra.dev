@@ -1,0 +1,31 @@
+@mixin font-skin-body-standard {
+  font-family: var(--base-font-family-primary);
+  font-weight: var(--base-font-weight-medium);
+  font-size: var(--base-font-size-300);
+  line-height: var(--base-font-line-height-500);
+  letter-spacing: var(--base-font-letter-spacing-100);
+}
+
+@mixin font-skin-body-small {
+  font-family: var(--base-font-family-primary);
+  font-weight: var(--base-font-weight-regular);
+  font-size: var(--base-font-size-200);
+  line-height: var(--base-font-line-height-500);
+  letter-spacing: var(--base-font-letter-spacing-100);
+}
+
+@mixin font-skin-body-subtle-small {
+  font-family: var(--base-font-family-primary);
+  font-weight: var(--base-font-weight-regular);
+  font-size: var(--base-font-size-200);
+  line-height: var(--base-font-line-height-500);
+  letter-spacing: calc(1px / var(--base-font-size-200));
+}
+
+@mixin font-skin-title-display {
+  font-family: var(--base-font-family-primary);
+  font-weight: var(--base-font-weight-bold);
+  font-size: var(--base-font-size-1200);
+  line-height: var(--base-font-line-height-100);
+  letter-spacing: var(--base-font-letter-spacing-400);
+}
