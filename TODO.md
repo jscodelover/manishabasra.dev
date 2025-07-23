@@ -1,14 +1,17 @@
-### Work in progress
+# MVP
 
 - Add the variables/token
-
-### TODO Item:
-
 - Setup the font
   - variable font
   - checkout css for js dev stuff for variable fonts
+
+## Work in progress
+
+- Typography
+
+## TODO Item:
+
 - Create Design system component
-  - Typography
   - Button
   - Button with Icon
   - Icon

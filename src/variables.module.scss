@@ -42,7 +42,7 @@
   --base-space-1500: 160px;
   --base-space-1600: 192px;
 
-  --base-font-family-primary: 'Inter', 'WorkSans', sans-serif;
+  --base-font-family-primary: var(--font-inter);
 
   --base-font-size-100: calc(1rem / 12);
   --base-font-size-200: calc(1rem / 14);
@@ -66,9 +66,7 @@
 
   --base-font-weight-regular: 400;
   --base-font-weight-medium: 500;
-  --base-font-weight-semi-bold: 600;
   --base-font-weight-bold: 700;
-  --base-font-weight-extra-bold: 800;
 
   --base-font-letter-spacing-100: 0em;
   --base-font-letter-spacing-200: 0.005em;

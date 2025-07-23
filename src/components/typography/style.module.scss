@@ -1,0 +1,14 @@
+@use 'src/font-mixins.scss';
+
+.font-skin-body-standard {
+  @include font-mixins.font-skin-body-standard;
+}
+.font-skin-body-small {
+  @include font-skin-body-small;
+}
+.font-skin-body-subtle-small {
+  @include font-mixins.font-skin-body-subtle-small;
+}
+.font-skin-title-display {
+  @include font-mixins.font-skin-title-display;
+}
