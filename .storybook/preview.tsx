@@ -29,6 +29,10 @@ const preview: Preview = {
       // 'error' - fail CI on a11y violations
       // 'off' - skip a11y checks entirely
       test: 'todo',
+      context: {
+        include: ['body'],
+        exclude: ['.no-a11y-check'],
+      },
     },
   },
   decorators: [

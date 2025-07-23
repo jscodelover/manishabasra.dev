@@ -1,5 +1,6 @@
 @use '@/app/fonts/font-mixins';
 @use '@/app/scss/unit-convertor';
+@use '@/app/scss/focus-ring-mixins';
 
 .button {
   padding: unit-convertor.px-to-rem(12) unit-convertor.px-to-rem(16);
@@ -9,6 +10,8 @@
   border: 1px solid transparent;
   border-radius: unit-convertor.px-to-rem(8);
   background-color: transparent;
+
+  @include focus-ring-mixins.focus-visible-tight;
 }
 
 .button-skin-primary {

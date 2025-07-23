@@ -11,14 +11,16 @@
 - Checkout satisfy typescript type
 - Button
 - set dark light mode in storybook
+- Add a11y storybook check
+- Focus visible for keyword
 
 ## Work in progress
 
 ## TODO Item:
 
-- Add a11y storybook check
-- Focus visible for keyword
 - dark color for shadow
+- jest-axe
+- ci/cd
 - Create Design system component
   - Button with Icon
   - Icon
