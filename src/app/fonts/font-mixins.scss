@@ -19,13 +19,21 @@
   font-weight: var(--base-font-weight-regular);
   font-size: var(--base-font-size-200);
   line-height: var(--base-font-line-height-500);
-  letter-spacing: calc(1px / var(--base-font-size-200));
+  letter-spacing: var(--base-font-letter-spacing-1000);
 }
 
 @mixin font-skin-title-display {
   font-family: var(--base-font-family-primary);
   font-weight: var(--base-font-weight-bold);
   font-size: var(--base-font-size-1200);
-  line-height: var(--base-font-line-height-100);
+  line-height: var(--base-font-line-height-200);
+  letter-spacing: var(--base-font-letter-spacing-400);
+}
+
+@mixin font-skin-editorial-headline {
+  font-family: var(--base-font-family-primary);
+  font-weight: var(--base-font-weight-bold);
+  font-size: var(--base-font-size-1200);
+  line-height: var(--base-font-line-height-200);
   letter-spacing: var(--base-font-letter-spacing-400);
 }

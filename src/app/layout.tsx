@@ -1,13 +1,7 @@
+import { Typography } from '@/components';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { inter } from './fonts/font-config';
 import './globals.scss';
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  fallback: ['sans-serif'],
-  variable: '--font-inter',
-})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.variable}>
+        <Typography fontSkin="body-subtle-small">From Layout</Typography>
+        {children}
+      </body>
     </html>
   );
 }

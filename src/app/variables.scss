@@ -1,3 +1,5 @@
+@use '@/app/fonts/font-utils.scss';
+
 :root {
   /* Base Token*/
   --base-color-pink-100: #e996bf;
@@ -42,20 +44,18 @@
   --base-space-1500: 160px;
   --base-space-1600: 192px;
 
-  --base-font-family-primary: var(--font-inter);
-
-  --base-font-size-100: calc(1rem / 12);
-  --base-font-size-200: calc(1rem / 14);
-  --base-font-size-300: calc(1rem / 16);
-  --base-font-size-400: calc(1rem / 18);
-  --base-font-size-500: calc(1rem / 20);
-  --base-font-size-600: calc(1rem / 24);
-  --base-font-size-700: calc(1rem / 28);
-  --base-font-size-800: calc(1rem / 32);
-  --base-font-size-900: calc(1rem / 36);
-  --base-font-size-1000: calc(1rem / 40);
-  --base-font-size-1100: calc(1rem / 44);
-  --base-font-size-1200: calc(1rem / 52);
+  --base-font-size-100: #{font-utils.px-to-rem(12)};
+  --base-font-size-200: #{font-utils.px-to-rem(14)};
+  --base-font-size-300: #{font-utils.px-to-rem(16)};
+  --base-font-size-400: #{font-utils.px-to-rem(18)};
+  --base-font-size-500: #{font-utils.px-to-rem(20)};
+  --base-font-size-600: #{font-utils.px-to-rem(24)};
+  --base-font-size-700: #{font-utils.px-to-rem(28)};
+  --base-font-size-800: #{font-utils.px-to-rem(32)};
+  --base-font-size-900: #{font-utils.px-to-rem(36)};
+  --base-font-size-1000: #{font-utils.px-to-rem(40)};
+  --base-font-size-1100: #{font-utils.px-to-rem(44)};
+  --base-font-size-1200: #{font-utils.px-to-rem(52)};
 
   --base-font-line-height-100: 1.1;
   --base-font-line-height-200: 1.2;
@@ -72,9 +72,7 @@
   --base-font-letter-spacing-200: 0.005em;
   --base-font-letter-spacing-300: 0.01em;
   --base-font-letter-spacing-400: 0.02em;
-  --base-font-letter-spacing-025: -0.03em;
-  --base-font-letter-spacing-050: -0.02em;
-  --base-font-letter-spacing-075: -0.01em;
+  --base-font-letter-spacing-1000: #{font-utils.px-to-rem(1)};
 
   /* Semantic Token */
   --sem-color-primary: var(--base-color-pink-600);
@@ -99,16 +97,14 @@
   --sem-elevation-xx-large: 0 25px 60px -15px rgb(16 24 40/ 0.12), 0 25px 60px -15px rgb(16 24 40/ 0.12);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sem-color-primary: var(--base-color-pink-300);
-    --sem-color-secondary: var(--base-color-pink-200);
-    --sem-color-tertiary: var(--base-color-pink-100);
-    --sem-color-accent: var(--base-color-pink-100);
+.dark-theme {
+  --sem-color-primary: var(--base-color-pink-300);
+  --sem-color-secondary: var(--base-color-pink-200);
+  --sem-color-tertiary: var(--base-color-pink-100);
+  --sem-color-accent: var(--base-color-pink-100);
 
-    --sem-color-text-standard: var(--base-color-grey-100);
-    --sem-color-text-subtle: var(--base-color-grey-200);
+  --sem-color-text-standard: var(--base-color-grey-100);
+  --sem-color-text-subtle: var(--base-color-grey-200);
 
-    --sem-color-bg: var(--base-color-black-100);
-  }
+  --sem-color-bg: var(--base-color-black-100);
 }
