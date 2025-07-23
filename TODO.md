@@ -15,12 +15,12 @@
 - Focus visible for keyword
 - dark color for shadow
 - jest-axe
+- typecheck
 
 ## Work in progress
 
 ## TODO Item:
 
-- typecheck
 - ci/cd
 - Create Design system component
   - Button with Icon
