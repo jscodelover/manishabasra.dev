@@ -14,12 +14,13 @@
 - Add a11y storybook check
 - Focus visible for keyword
 - dark color for shadow
+- jest-axe
 
 ## Work in progress
 
 ## TODO Item:
 
-- jest-axe
+- typecheck
 - ci/cd
 - Create Design system component
   - Button with Icon
