@@ -19,9 +19,10 @@
 
 ## Work in progress
 
+- ci/cd
+
 ## TODO Item:
 
-- ci/cd
 - Create Design system component
   - Button with Icon
   - Icon

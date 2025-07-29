@@ -26,13 +26,15 @@ jobs:
         run: npm run lint
 
       - name: Check formatting
-        run: npm run format
+        run: npm run format"
 
       - name: Check type
         run: npm run typecheck
 
       - name: Build the package
         run: npm run build
+      - name: Build the storybook
+        run: npm run build:storybook
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
